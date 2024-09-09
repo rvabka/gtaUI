@@ -36,7 +36,7 @@ export default function ToggleComponent({
       <div
         className={`transition-all duration-300 ease-in-out mt-4 w-full ${
           isVisible
-            ? "opacity-100 max-h-screen overflow-auto"
+            ? "opacity-100 max-h-screen overflow-hidden"
             : "opacity-0 max-h-0 overflow-hidden"
         }`}
       >
