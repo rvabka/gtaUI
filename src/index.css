@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  height: 100vh;
+  background-image: url("./assets/image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-hover-gradient {
+  background: linear-gradient(180.67deg, #ff1a35 27.47%, #a01f2e 99.42%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.icon-hover-gradient:hover {
+  color: transparent;
+}
