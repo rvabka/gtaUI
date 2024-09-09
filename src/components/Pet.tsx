@@ -1,7 +1,6 @@
 import ToggleComponent from "./ToggleComponent";
-import { SiGooglemaps } from "react-icons/si";
-import { TiWeatherCloudy } from "react-icons/ti";
 import { FaRegCopy } from "react-icons/fa6";
+import { IoMan } from "react-icons/io5";
 
 export default function Pet() {
   const cooridinates = "X: -803.717 Y: 176.49, Z: 72.841";
@@ -10,13 +9,13 @@ export default function Pet() {
     <div className="h-[730px] w-[520px] bg-main">
       <ToggleComponent
         title="Pew spawner"
-        icon={<SiGooglemaps color="#FF1A35" />}
+        icon={<IoMan color="#FF1A35" />}
         isArrow={false}
       ></ToggleComponent>
       <ToggleComponent
-        title="Time and weathers configuration"
-        icon={<TiWeatherCloudy color="#525560" />}
-        isArrow={false}
+        title="Chichuahua hot dogs ped"
+        icon={<IoMan color="#525560" />}
+        isArrow={true}
       >
         <div className="LINE flex justify-between items-center w-[520px] h-[58px] px-5">
           <h2 className="text-sm text-fontGray">Model ID</h2>

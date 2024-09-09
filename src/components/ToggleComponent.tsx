@@ -19,8 +19,8 @@ export default function ToggleComponent({
 
   return (
     <div className="flex items-center flex-col text-pureWhite w-[520px]">
-      <div className="flex items-center justify-between w-[520px] bg-gray h-[55px] px-5 ">
-        <div className="flex items-center justify-center">
+      <div className="flex items-center justify-between w-full bg-gray h-[55px] px-5">
+        <div className="flex items-center">
           {icon}
           <h1 className="text-sm ml-3 text-pureWhite font-bold">{title}</h1>
         </div>
@@ -34,10 +34,10 @@ export default function ToggleComponent({
         ) : null}
       </div>
       <div
-        className={`transition-transform duration-250 ease-in-out mt-4 z-10 ${
+        className={`transition-all duration-300 ease-in-out mt-4 w-full ${
           isVisible
-            ? "transform translate-y-0"
-            : "transform -translate-y-20 opacity-0 hidden"
+            ? "opacity-100 max-h-screen overflow-auto"
+            : "opacity-0 max-h-0 overflow-hidden"
         }`}
       >
         {children}
