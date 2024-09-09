@@ -21,7 +21,7 @@ export default function Home() {
 
 
   return (
-    <div className="h-[730px] w-[520px] bg-main">
+    <div className="h-[75vh] w-[520px] bg-main">
       <ToggleComponent
         title="Current cooridinates"
         icon={<SiGooglemaps color="#FF1A35" />}
